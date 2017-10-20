@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pdf-5g-xFv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPj-q6-b0G">
+                                <rect key="frame" x="20" y="164" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.74787110040000004" green="0.95686274510000002" blue="0.52376164800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RvL-Gw-Inr"/>
+                                </constraints>
+                                <state key="normal" title="图片信息"/>
+                                <connections>
+                                    <action selector="imageInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJn-VG-ruR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsb-fn-e6A">
+                                <rect key="frame" x="20" y="240" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.74787110040000004" green="0.95686274510000002" blue="0.52376164800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mg3-4E-FBV"/>
+                                </constraints>
+                                <state key="normal" title="图片处理"/>
+                                <connections>
+                                    <action selector="imageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u1T-hc-kIJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wsb-fn-e6A" firstAttribute="top" secondItem="cPj-q6-b0G" secondAttribute="bottom" constant="36" id="Uvw-v1-sCr"/>
+                            <constraint firstAttribute="trailing" secondItem="cPj-q6-b0G" secondAttribute="trailing" constant="20" id="j2U-Tt-eKh"/>
+                            <constraint firstItem="Wsb-fn-e6A" firstAttribute="trailing" secondItem="cPj-q6-b0G" secondAttribute="trailing" id="kZg-BZ-o2B"/>
+                            <constraint firstItem="Wsb-fn-e6A" firstAttribute="leading" secondItem="cPj-q6-b0G" secondAttribute="leading" id="lxU-hU-fzz"/>
+                            <constraint firstItem="cPj-q6-b0G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="pev-Ed-gaB"/>
+                            <constraint firstItem="cPj-q6-b0G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="uF9-Wn-sNN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OfU-CT-V0k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975.20000000000005" y="38.23088455772114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BfN-1F-pnn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pdf-5g-xFv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M0j-yV-b0z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vvs-N7-vlo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXT-WA-rxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.59999999999999" y="692.20389805097454"/>
+        </scene>
+    </scenes>
+</document>
